@@ -6,6 +6,7 @@ public class Produto {
 	private String fabricante;
 	private Integer quantidade;
 	private Double preco; 
+	private Categoria categoria;
 	
 	public String getNome() {
 		return nome;
@@ -37,6 +38,14 @@ public class Produto {
 	
 	public void setPreco(Double preco) {
 		this.preco = preco;
+	}
+	
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
 	}
 
 	public Produto() {
