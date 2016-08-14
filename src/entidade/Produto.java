@@ -50,6 +50,13 @@ public class Produto {
 		this.quantidade = quantidade;
 		this.preco = preco;
 	}
+
+	@Override
+	public String toString() {
+		return "Produto [nome=" + nome + ", fabricante=" + fabricante + ", quantidade=" + quantidade + ", preco="
+				+ preco + "]";
+	}
 	
-		
+	
+	
 }

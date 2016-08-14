@@ -40,6 +40,11 @@ public class ProdutoNaoPerecivel extends Produto {
 	public void setPeso(Double peso) {
 		this.peso = peso;
 	}
+
+	@Override
+	public String toString() {
+		return "ProdutoNaoPerecivel [altura=" + altura + ", largura=" + largura + ", peso=" + peso + "]";
+	}
 	
 	
 }

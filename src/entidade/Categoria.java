@@ -1,9 +1,12 @@
 package entidade;
 
+import java.util.List;
+
 public class Categoria {
 
 	private String nome;
 	private String descricao;
+	private List<Produto> listaprodutos;
 	
 	public Categoria() {
 		
@@ -30,6 +33,21 @@ public class Categoria {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+
+	public List<Produto> getListaprodutos() {
+		return listaprodutos;
+	}
+
+	public void setListaprodutos(List<Produto> listaprodutos) {
+		this.listaprodutos = listaprodutos;
+	}
+
+	@Override
+	public String toString() {
+		return "Categoria [nome=" + nome + ", descricao=" + descricao + ", listaprodutos=" + listaprodutos + "]";
+	}
+	
+	
 	
 	
 }
