@@ -45,6 +45,5 @@ public class ProdutoNaoPerecivel extends Produto {
 	public String toString() {
 		return "ProdutoNaoPerecivel [altura=" + altura + ", largura=" + largura + ", peso=" + peso + "]";
 	}
-	
-	
+		
 }

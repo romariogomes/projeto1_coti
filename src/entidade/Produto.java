@@ -39,33 +39,28 @@ public class Produto {
 	public void setPreco(Double preco) {
 		this.preco = preco;
 	}
+
+	public Produto() {
+		categoria = new Categoria();
+	}
 	
 	public Categoria getCategoria() {
 		return categoria;
 	}
 
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
-	}
-
-	public Produto() {
-		
-	}
-
-	public Produto(String nome, String fabricante, Integer quantidade, Double preco) {
+	public Produto(String nome, String fabricante, Integer quantidade, Double preco, String nome_cat, String desc_cat) {
 		super();
 		this.nome = nome;
 		this.fabricante = fabricante;
 		this.quantidade = quantidade;
 		this.preco = preco;
+		this.categoria = new Categoria(nome_cat, desc_cat);
 	}
 
 	@Override
 	public String toString() {
 		return "Produto [nome=" + nome + ", fabricante=" + fabricante + ", quantidade=" + quantidade + ", preco="
-				+ preco + "]";
+				+ preco + ", categoria=" + categoria + "]";
 	}
-	
-	
-	
+			
 }

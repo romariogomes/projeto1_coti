@@ -1,6 +1,6 @@
 package entidade;
 
-import java.util.List;
+import java.util.List; 
 
 public class Categoria {
 
@@ -13,7 +13,6 @@ public class Categoria {
 	}
 
 	public Categoria(String nome, String descricao) {
-		super();
 		this.nome = nome;
 		this.descricao = descricao;
 	}
@@ -46,8 +45,5 @@ public class Categoria {
 	public String toString() {
 		return "Categoria [nome=" + nome + ", descricao=" + descricao + ", listaprodutos=" + listaprodutos + "]";
 	}
-	
-	
-	
 	
 }
