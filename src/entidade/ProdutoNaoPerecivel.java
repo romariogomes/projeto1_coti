@@ -1,4 +1,4 @@
-package entidade;
+package entidade; 
 
 public class ProdutoNaoPerecivel extends Produto {
 
@@ -7,7 +7,6 @@ public class ProdutoNaoPerecivel extends Produto {
 	private Double peso;
 	
 	public ProdutoNaoPerecivel() {
-
 	}
 
 	public ProdutoNaoPerecivel(Double altura, Double largura, Double peso) {
@@ -41,9 +40,9 @@ public class ProdutoNaoPerecivel extends Produto {
 		this.peso = peso;
 	}
 
-	@Override
-	public String toString() {
-		return "ProdutoNaoPerecivel [altura=" + altura + ", largura=" + largura + ", peso=" + peso + "]";
+	
+	public String toString2() {
+		return "\nProdutoNaoPerecivel [altura=" + altura + ", largura=" + largura + ", peso=" + peso + "]";
 	}
 		
 }
