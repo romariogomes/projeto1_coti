@@ -18,7 +18,7 @@ public static void main(String[] args) {
 		p1.getCategoria().setDescricao("Picanha");
 		
 		System.out.println(p1.toString() + "\n"); 
-		
+		System.out.println("TOTAL: R$" + p1.calculaPreco(p1.getQuantidade(), p1.getPreco()) + "\n");
 		
 		ProdutoNaoPerecivel p2 = new ProdutoNaoPerecivel();
 		
@@ -35,6 +35,7 @@ public static void main(String[] args) {
 		p2.setLargura(0.05);
 		
 		System.out.println(p2.toString()+ p2.toString2() + "\n");
+		System.out.println("TOTAL: R$" + p2.calculaPreco(p2.getQuantidade(), p2.getPreco()) + "\n");
 		
 	}
 }

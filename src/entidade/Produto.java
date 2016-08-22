@@ -62,5 +62,12 @@ public class Produto {
 		return "Produto [nome=" + nome + ", fabricante=" + fabricante + ", quantidade=" + quantidade + ", preco="
 				+ preco + ", \n" + categoria + "]";
 	}
+	
+	public Double calculaPreco(Integer quantidade, Double preco) {
+		
+		Double total = quantidade*preco;
+		return total;
+		
+	}
 			
 }
