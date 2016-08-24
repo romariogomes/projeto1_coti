@@ -70,7 +70,7 @@ public class Produto {
 		
 	}
 	
-	public String maiorPreco (Produto p1, Produto p2) {
+	public String maiorPreco(Produto p1, Produto p2) {
 		
 		if (p1.getPreco().equals(p2.getPreco())) {
 			return p1.getNome() + " e " + p2.getNome() + " possuem preços iguais";
@@ -81,6 +81,17 @@ public class Produto {
 		} else
 		
 		return p2.getNome() + " é o produto mais caro!";
+	}
+	
+	public Double calculaDesconto(Double precoinicial) {
+		Double precofinal = precoinicial-(precoinicial*0.05);
+		return precofinal;
+	}
+	
+	public Double calculaDesconto(Double precoinicial, Double valor_desconto) {
+		valor_desconto = valor_desconto/100;
+		Double precofinal = precoinicial-(precoinicial*valor_desconto);
+		return precofinal;
 	}
 			
 }
