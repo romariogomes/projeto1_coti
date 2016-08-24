@@ -69,5 +69,18 @@ public class Produto {
 		return total;
 		
 	}
+	
+	public String maiorPreco (Produto p1, Produto p2) {
+		
+		if (p1.getPreco().equals(p2.getPreco())) {
+			return p1.getNome() + " e " + p2.getNome() + " possuem preços iguais";
+		} else
+		
+		if (p1.getPreco()>p2.getPreco()) {
+			return p1.getNome() + " é o produto mais caro!";
+		} else
+		
+		return p2.getNome() + " é o produto mais caro!";
+	}
 			
 }
